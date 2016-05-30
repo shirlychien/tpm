@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths hb-loaded" style="">
 <head>
-	<meta charset="utf-8" />
-	<title>珍爱时刻 The Precious Moment</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <title>珍爱时刻 The Precious Moment</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	
-	<!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
-    
-    <link href="//cdn.bootcss.com/normalize/4.1.1/normalize.css" rel="stylesheet">
 
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    
-    <!-- js -->
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">     
+
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+
+	
+	<!-- js -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<!-- //js -->
-	<!-- for-mobile-apps -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-			function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- //for-mobile-apps -->
 	<!--Animation-->
 	<script src="js/wow.min.js"></script>
 	<link href="css/animate.css" rel='stylesheet' type='text/css' />
@@ -34,6 +26,15 @@
 	</script>
 	<!---/End-Animation---->
 	
+	
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+			function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
 	<!-- start-smoth-scrolling -->
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
@@ -47,7 +48,6 @@
 	</script>
 
 
-
 <!-- Le HTML5 shim and media query for IE8 support -->
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>	
@@ -58,8 +58,18 @@
 
 	<![endif]-->
 
-    
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b1d8665988c2d74d0e32a64258bbe02d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 </head>
+
 <body>
 	<!-- ===== 头部 ===== -->
 	<header role="banner">
@@ -74,6 +84,7 @@
 					<a href="">EN</a>
 				</div>
 				<nav role="navigation">
+					<span class="menu"><img src="images/nav.png" alt=""/></span>
 					<ul>
 						<li><a href="#">公司介绍</a>
 							<ul>
@@ -109,6 +120,15 @@
 						<li><a href="#">加入我们</a></li>
 						<li><a href="#">联系我们</a></li>
 					</ul>
+					<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( "nav> ul" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+					<!-- //script for menu -->		
 				</nav>
 			</div>
 		</div>
@@ -460,5 +480,4 @@
 			});
 	</script>
 <!-- //here ends scrolling icon -->
-</body>
-</html>
+</body></html>
