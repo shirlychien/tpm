@@ -862,3 +862,44 @@ nav li li:hover >a{
 	max-width:200px; 
 }
 }
+
+/*-- 二级页通用 --*/
+.banner-s{
+	background: url("../images/bg-s.jpg")no-repeat center top;
+	background-size:cover;
+	width: 100%;
+	min-height: 14px;
+	text-align: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+}
+/*面包屑*/
+.breadcrumb-wrap {
+	height: 36px;
+	margin-bottom: 2em;
+}
+.breadcrumbs{
+	max-width: 960px;
+	margin: 0 auto;
+}
+.breadcrumb{
+	margin-left: -16px;
+	background-color: #fff;
+}
+.breadcrumb-wrap .glyphicon.glyphicon-home {
+	font-size: 1.1em;
+	color: #cea36c;
+	padding-right: .5em;
+}
+
+.breadcrumb li a {
+	font-size: 1.1em;
+	color: #cea36c;
+}
+.breadcrumb li a:hover {
+	color: #4c2562;
+}
+
+
