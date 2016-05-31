@@ -75,6 +75,9 @@ nav ul li a{
 	display: block;
 	padding: 16px 1.3em 14px;
 }
+nav a:visited{
+	text-decoration:none;
+}
 nav a:hover{
 	text-decoration:none;
 	color: #4c2562;
@@ -161,14 +164,13 @@ span.menu{
 	margin: 200px auto 0;
 }
 .banner .bann-logo img{
-	width: 40%;
 	padding: 0 60px 36px;
 	border-bottom: solid 2px #fff;
 }
 .slider {
-	margin-top: 30px;
+	margin: 30px auto 0;
 	position: relative;
-	padding:0 30%;
+	width: 446px;
 }
 .rslides {
 	position: relative;
@@ -177,7 +179,6 @@ span.menu{
 	width: 100%;
 	padding: 0;
 	margin: 0;
-
 }
 
 .rslides li {
@@ -193,10 +194,10 @@ span.menu{
 	display: block;
 	float: left;
 }
-  
 .rslides h1{
 	font-size: 2.8em;
 	color: #fff;
+	letter-spacing: 0.05em;
 }
 .rslides p{
 	font-size: 1.2em;
@@ -209,7 +210,7 @@ span.menu{
 	margin: 2.8em 0em 2em 0em;
 }
 .bann-btn a {
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.9);
 	font-size: 1.7em;
 	letter-spacing: .1em;
 	color: #cea36c;
@@ -228,8 +229,8 @@ span.menu{
 .callbacks_nav {
 	position: absolute;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	top: 57%;
-	left: 20%;
+	top: 80px;
+	left: -85px;
 	opacity: 0.7;
 	z-index: 3;
 	text-indent: -9999px;
@@ -237,15 +238,15 @@ span.menu{
 	text-decoration: none;
 	height: 61px;
 	width: 38px;
-	background: transparent url("../images/gif.png") no-repeat 0px 0px;
+	background: transparent url("../images/banner-arrow.png") no-repeat 0px 0px;
 	margin-top: -66px;
-  }
+}
 .callbacks_nav.next {
 	left: auto;
 	background-position: right top;
-	right: 19%;
-	top: 57%;
- }
+	right: -96px;
+	top: 80px;
+}
 /*关于*/
 main .title{
 	text-align: center;
@@ -276,7 +277,7 @@ main .title{
 #about article{
 	text-align: center;
 	margin: -200px auto 0;
-	width: 680px;
+	max-width: 680px;
 }
 #about article p, #news .news-info p{
 	font-size: 1.2em;
@@ -368,10 +369,6 @@ section#works{
 	background-color: #faf6f0;
 	padding: 0.5em 1.5em;
 }
-/*
-.grid figcaption a:hover {
-	color: #cea36c;
-}*/
 .grid figcaption {
 	opacity: 0;
 	text-align: center;
@@ -446,10 +443,12 @@ section#restaurant{
 #restaurant a{
 	color: #595757;
 }
-
-#news img{
-	height: 304px;
+/*动态*/
+#news .news-img{
+	background: url(../images/news.jpg) no-repeat center center;
+	background-size: cover;
 	width: 228px;
+	height: 304px;
 }
 .news-info{
 	text-align: left;
@@ -599,7 +598,6 @@ footer{
 }
 .partners{
 	text-align: center;
-	padding-top: 12px;
 	margin-bottom: 12px;
 	clear: both;
 }
@@ -615,7 +613,7 @@ footer{
 	text-align: center;
 }
 .footer-bottom{
-	margin: 20px auto 0;
+	margin: 20px auto;
 }
 .footer-bottom p{
 	text-align: center;
@@ -652,6 +650,7 @@ footer{
 
 
 @media(max-width:992px){
+/*nav*/
 nav ul li a{
 	padding: 16px 0.5em 14px;
 }
@@ -664,9 +663,47 @@ nav li:nth-child(4) ul{
 nav li li a{
 	padding: 5px 0 5px 0.5em;
 }
-
+/*banner*/
+.banner{
+	min-height: 500px;
+}
+.banner .bann-logo{
+	margin: 120px auto 0;
+}
+.banner .bann-logo img{
+	width: 340px;
+	padding: 0 40px 26px;
+}
+.slider {
+	margin: 20px auto 0;
+	width: 340px;
+}
+.rslides h1{
+	font-size: 2.1em;
+}
+.rslides p{
+	height: 44px;
+}
+.bann-btn {
+	float:center;
+	margin: 2.8em 0em 2em 0em;
+}
+.bann-btn a {
+	font-size: 1.4em;
+}
+.callbacks_nav {
+	left: -65px;
+}
+.callbacks_nav.next {
+	right: -76px;
+}
+/*footer*/
+.partners{
+	padding-top: 40px;
+}
 }
 @media(max-width:768px){
+/*nav*/
 span.menu{
 	display: block;
 	cursor: pointer;
@@ -697,8 +734,6 @@ nav ul li a, nav ul li ul li a{
 nav ul li ul li a{
 	background-color: rgba(255, 255, 255, 1);
 }
-
-
 nav li:hover > ul{
 	display: block;
 	width: 100%;
@@ -724,5 +759,106 @@ nav li:hover >a{
 nav li li:hover >a{
 	background-color: #cea36c;
 	color: #fff;
+}
+/*about*/
+#about article p span{
+	display: inline;
+}
+/*service*/
+#service .grids{
+	padding-right: 0;
+}
+#service .grid{
+	text-align: center;
+	margin-bottom: 50px;
+}
+#service .grid p.num{
+	margin-bottom: 14px;
+}
+#service .grid h2{
+	margin-bottom: 20px;
+}
+/*news*/
+.news-info-main{
+	width: 228px;
+	margin: 40px auto;
+}
+.news-info-aside{
+	margin: 0 auto;
+	width: 420px;
+}
+.news-info-aside h4{
+	width: 325px;
+} 
+.news-info-aside time{
+	padding: 0 25px 0 0; 
+} 
+/*footer*/
+.footer-logo{
+	text-align: center;
+}
+.social-icons, .contact-info{
+	width: 270px;
+	margin: 14px auto;
+}
+.contact-info{
+	padding-left: 12px;
+}
+.social-icons{
+	padding-left: 105px;
+}
+.qr-codes{
+	padding: 30px 0 0 15px;
+	text-align: center;
+	margin: 12px auto;
+	max-width:330px; 
+}
+
+}
+@media(max-width:480px){
+/*banner*/
+.banner{
+	min-height: 500px;
+}
+.banner .bann-logo{
+	margin: 120px auto 0;
+}
+.banner .bann-logo img{
+	width: 280px;
+}
+.slider {
+	margin: 25px auto 0;
+	width: 280px;
+}
+.rslides h1{
+	font-size: 1.8em;
+	letter-spacing: 0;
+}
+.rslides p{
+	height: 56px;
+}
+.callbacks_nav {
+	left: -30px;
+}
+.callbacks_nav.next {
+	right: -41px;
+}
+/*restaurant*/
+#restaurant p{
+	font-size: 1.4em;
+}
+/*news*/
+.news-info-aside{
+	margin: 0 auto;
+	width: 300px;
+}
+.news-info-aside h4{
+	width: 205px;
+} 
+.qr-codes{
+	padding: 30px 0 0 25px;
+	text-align: center;
+	margin: 12px auto;
+	max-width:200px; 
 }
 }
