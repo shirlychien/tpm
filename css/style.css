@@ -117,7 +117,11 @@ nav li li ul{
 }
 nav li li li a{
 	border-left: solid 1px #cea36c;
+	border-right: solid 1px #cea36c;
 	background-color: rgba(255, 255, 255, 0.8);
+}
+nav li li:last-child a, nav li li li:last-child a{
+	border-bottom: solid 1px #cea36c;
 }
 span.menu{
 	display: none;
@@ -649,6 +653,123 @@ footer{
 }/*--//flexisel--*/
 
 
+
+
+/*-- 二级页通用 --*/
+.banner-s{
+	background: url("../images/bg-s.jpg")no-repeat center top;
+	background-size:cover;
+	width: 100%;
+	min-height: 14px;
+	text-align: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+}
+/*面包屑*/
+.breadcrumb-wrap {
+	height: 36px;
+	margin-bottom: 2em;
+}
+.breadcrumbs{
+	max-width: 960px;
+	margin: 0 auto;
+}
+.breadcrumb{
+	margin-left: -16px;
+	background-color: #fff;
+}
+.breadcrumb-wrap .glyphicon.glyphicon-home {
+	font-size: 1.1em;
+	color: #cea36c;
+	padding-right: .5em;
+}
+
+.breadcrumb li, .breadcrumb li a {
+	font-size: 1.1em;
+	color: #cea36c;
+}
+.breadcrumb li a:hover {
+	color: #4c2562;
+}
+/*正文*/
+.main-body main{
+	margin: 0 auto;
+	min-height: 450px;
+	max-width: 960px;
+}
+.main-body article{
+	text-align: left;
+}
+.main-body aside{
+	width: 100%;
+	margin-left: -20px;
+}
+.main-body aside h1{
+	width: 100%;
+	display: block;
+	font-size: 1.8em;
+	color: #cea36c;
+	padding: 0.5em 1em 0 0;	
+	text-align: right;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #cea36c;
+}
+.main-body aside h1 span{
+	display: block;
+	font-size: 0.5em;
+	padding: 0.5em 0 0.7em;
+	text-transform: uppercase;
+}
+.main-body aside ul{
+	margin-top: 2em;
+	list-style: none;
+	text-align: right;
+	padding: 0 1.8em 1.5em 0;
+	border-bottom: solid 2px #cea36c;
+}
+.main-body aside ul li{
+	font-size: 1.2em;
+	color: #cea36c;
+	padding: 1em 0;
+}
+.main-body aside ul li a{
+	text-decoration: none;
+	color: #cea36c;
+}
+.main-body aside ul li.active a{
+	color: #4c2562;
+}
+.main-body aside ul li a:hover{
+	color: #4c2562;
+}
+.main-body article{
+	margin-bottom: 80px;
+}
+.main-body article h1{
+	font-size: 1.8em;
+	color: #cea36c;
+	padding: 0.6em 0 1.5em 0;	
+}
+.main-body article p{
+	margin-bottom: 1.5em;
+}
+.main-body article p span{
+	color: #cea36c;
+}
+.main-body article ul{
+	margin: 1.5em 0 2.5em 2em;
+}
+.main-body article a{
+	text-decoration: underline;
+	color: #595757;
+}
+.main-body article a:hover{
+	color: #cea36c;
+}
+
 @media(max-width:992px){
 /*nav*/
 nav ul li a{
@@ -861,119 +982,4 @@ nav li li:hover >a{
 	margin: 12px auto;
 	max-width:200px; 
 }
-}
-
-/*-- 二级页通用 --*/
-.banner-s{
-	background: url("../images/bg-s.jpg")no-repeat center top;
-	background-size:cover;
-	width: 100%;
-	min-height: 14px;
-	text-align: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-}
-/*面包屑*/
-.breadcrumb-wrap {
-	height: 36px;
-	margin-bottom: 2em;
-}
-.breadcrumbs{
-	max-width: 960px;
-	margin: 0 auto;
-}
-.breadcrumb{
-	margin-left: -16px;
-	background-color: #fff;
-}
-.breadcrumb-wrap .glyphicon.glyphicon-home {
-	font-size: 1.1em;
-	color: #cea36c;
-	padding-right: .5em;
-}
-
-.breadcrumb li, .breadcrumb li a {
-	font-size: 1.1em;
-	color: #cea36c;
-}
-.breadcrumb li a:hover {
-	color: #4c2562;
-}
-/*正文*/
-.main-body{
-	max-width: 960px;
-	margin: 0 auto;
-	min-height: 450px;
-}
-.main-body main{
-	text-align: left;
-}
-.main-body aside{
-	width: 100%;
-	margin-left: -20px;
-}
-.main-body aside h1{
-	width: 100%;
-	display: block;
-	font-size: 1.8em;
-	color: #cea36c;
-	padding: 0.5em 1em 0 0;	
-	text-align: right;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #cea36c;
-}
-.main-body aside h1 span{
-	display: block;
-	font-size: 0.5em;
-	padding: 0.5em 0 0.7em;
-	text-transform: uppercase;
-}
-.main-body aside ul{
-	margin-top: 2em;
-	list-style: none;
-	text-align: right;
-	padding: 0 1.8em 1.5em 0;
-	border-bottom: solid 2px #cea36c;
-}
-.main-body aside ul li{
-	font-size: 1.2em;
-	color: #cea36c;
-	padding: 1em 0;
-}
-.main-body aside ul li a{
-	text-decoration: none;
-	color: #cea36c;
-}
-.main-body aside ul li.active a{
-	color: #4c2562;
-}
-.main-body aside ul li a:hover{
-	color: #4c2562;
-}
-.main-body article{
-	margin-bottom: 80px;
-}
-.main-body article h1{
-	font-size: 1.8em;
-	color: #cea36c;
-	padding: 0.6em 0 1.5em 0;	
-}
-.main-body article p{
-	margin-bottom: 1.5em;
-}
-.main-body article p span{
-	color: #cea36c;
-}
-.main-body article ul{
-	margin: 1.5em 0 2.5em 2em;
-}
-.main-body article a{
-	text-decoration: underline;
-	color: #595757;
-}
-.main-body article a:hover{
-	color: #cea36c;
 }
