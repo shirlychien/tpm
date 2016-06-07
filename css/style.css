@@ -90,7 +90,7 @@ nav li:hover > a{
 }
 nav li ul{
 	display: none;
-	width: 10em;
+	width: 9.5em;
 	position: absolute;
 	left:0;
 	top:100%;
@@ -769,6 +769,10 @@ footer{
 .main-body article a:hover{
 	color: #cea36c;
 }
+.main-body img{
+	width: 100%;
+	margin: 1.5em 0;
+}
 
 @media(max-width:992px){
 /*nav*/
@@ -776,7 +780,7 @@ nav ul li a{
 	padding: 16px 0.5em 14px;
 }
 nav li ul{
-	width: 10em;
+	width: 7.5em;
 }
 nav li:nth-child(4) ul{
 	width: 11em;
@@ -823,7 +827,7 @@ nav li li a{
 	padding-top: 40px;
 }
 }
-@media(max-width:768px){
+@media(max-width:767px){
 /*nav*/
 span.menu{
 	display: block;
@@ -934,7 +938,24 @@ nav li li:hover >a{
 	margin: 12px auto;
 	max-width:330px; 
 }
+.qr-codes li{
+	float: none;
+}
 
+/*二级页*/
+.main-body aside > ul{
+	display: inline-block;
+	width: 100%; 
+}
+.main-body aside ul li{
+	display: block;
+	float: right;
+	padding-left: 3em;
+	padding-bottom: 0.5em;
+}
+.main-body article{
+	clear: both;
+}
 }
 @media(max-width:480px){
 /*banner*/
