@@ -670,7 +670,7 @@ footer{
 /*面包屑*/
 .breadcrumb-wrap {
 	height: 36px;
-	margin-bottom: 2em;
+	margin-bottom: 4em;
 }
 .breadcrumbs{
 	max-width: 960px;
@@ -782,7 +782,11 @@ footer{
 	float: left;
 	margin: -0.55em 3em 1.5em 0;
 }
-
+.main-body article embed{
+	width: 100%;
+	height: 430px;
+	margin: 4em auto;
+}
 
 /*service-list*/
 #service-list article h2{
@@ -826,10 +830,15 @@ footer{
 	margin: 3em 0;
 	text-align: center;
 }
-.work-list input, .work-list section {
-  clear: both;
-  padding-top: 10px;
-  display: none;
+.work-list section{
+	clear: both;
+	padding-top: 10px;
+	display: block;	
+}
+.work-list input, .work-list .labels section {
+	clear: both;
+	padding-top: 10px;
+	display: none;
 }
 .work-list label {
 	color: #595757;
@@ -875,7 +884,7 @@ label:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 200px;
+	width: 198px;
 	height: 130px;
 	margin: 1em;
 	text-align: center;
@@ -885,7 +894,7 @@ label:hover {
 }
 .work-list section .grid figcaption h3{
 	font-size: 1.2em;
-    margin: 7px 0 12px 0;
+    margin: 5px 0 7px 0;
     letter-spacing: 0.1em;
 }
 .work-list section .grid figcaption span{
@@ -893,14 +902,13 @@ label:hover {
 	font-size: 1em;
 	line-height: 1.4em;
 	height: 3em;
-	margin-bottom: 10px;
 }
 .work-list section .grid figcaption a {
 	font-size: 1em;
 	letter-spacing: .1em;
 	color: #4c2562;
 	background-color: #faf6f0;
-	padding: 0.5em 1.5em;
+	padding: 0.3em 1em;
 }
 .work-list section .grid figcaption {
 	opacity: 0;
@@ -973,6 +981,10 @@ nav li li a{
 /*footer*/
 .partners{
 	padding-top: 40px;
+}
+/*二级页通用*/
+.main-body article embed{
+	height: 330px;
 }
 
 /*service-list*/
@@ -1122,6 +1134,9 @@ nav li li:hover >a{
 .main-body article{
 	clear: both;
 }
+.main-body article embed{
+	height: 430px;
+}
 /*service-list*/
 #service-list .m-img{
 	width: 70%;
@@ -1164,7 +1179,10 @@ nav li li:hover >a{
 	float: none;
 	margin: 0 0 1.5em 0;
 }	
-	
+/*二级页通用*/
+.main-body article embed{
+	height: 330px;
+}	
 }
 @media(max-width:480px){
 /*banner*/
@@ -1217,6 +1235,10 @@ nav li li:hover >a{
 	float: none;
 	margin: 0 0 1.5em 0;
 }
+/*二级页通用*/
+.main-body article embed{
+	height: 280px;
+}
 }
 @media(max-width:360px){
 /*work-list*/
@@ -1228,5 +1250,9 @@ nav li li:hover >a{
 	height: 175px;
 	margin: 10px;
 }
-
+/*二级页通用*/
+.main-body article embed{
+	height: 220px;
+	margin: 3em auto;
+}
 }
