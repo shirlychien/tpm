@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths hb-loaded" style="">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <title>珍爱时刻 The Precious Moment</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">     
+
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+
+	
+	<!-- js -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- //js -->
+	<!--Animation-->
+	<script src="js/wow.min.js"></script>
+	<link href="css/animate.css" rel='stylesheet' type='text/css' />
+	<script>
+		new WOW().init();
+	</script>
+	<!---/End-Animation---->
+	
+	
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+			function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+
+
+<!-- Le HTML5 shim and media query for IE8 support -->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>	
+	<script type="text/javascript" src="http://www.aeolustyre.com/plugins/system/t3/base-bs3/js/respond.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate.min-ver=1.2.1.js"></script>
+
+	<![endif]-->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b1d8665988c2d74d0e32a64258bbe02d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+<body>
+	<!-- ===== 头部 ===== -->
+	<header role="banner">
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.jpg" alt="珍爱时刻THE PRECIOUS MOMENT"/></a>
+				</div>
+				<div class="language">
+					<a href="#">简</a>
+					<a href="#">繁</a>
+					<a href="#">EN</a>
+				</div>
+				<nav role="navigation">
+					<span class="menu"><img src="images/nav.png" alt=""/></span>
+					<ul>
+						<li><a href="about/intro.html">关于我们</a>
+							<ul>
+								<li><a href="about/intro.html">品牌介绍</a></li>
+								<li><a href="about/founder.html">创始人</a></li>
+								<li><a href="about/memorabilia.html">大事记</a></li>
+								<li><a href="about/award.html">获奖介绍</a></li>
+							</ul>
+						</li>
+						<li><a href="service/service-list.html">业务介绍</a>
+							<ul>
+								<li><a href="service/wedding/wedding-list.html">婚礼艺术</a></li>
+								<li><a href="service/event/event-list.html">公关活动</a>
+									<ul>
+										<li><a href="service/event/party01.html">品牌晚宴</a></li>
+										<li><a href="service/event/launch01.html">发布会</a></li>
+										<li><a href="service/event/show01.html">时装秀</a></li>
+										<li><a href="service/event/art01.html">艺术装置</a></li>
+										<li><a href="service/event/exhibition01.html">会展</a></li>										
+									</ul>
+								</li>
+								<li><a href="service/landscape/landscape-list.html">绿化工程</a></li>
+								<li><a href="service/retail/retail-list.html">商品零售</a></li>
+							</ul>										
+						</li>
+						<li><a href="news/news-list.html">最新动态</a></li>
+						<li><a href="service/restautant/intro.html"><span lang="en">Botanica</span>植物园</a>
+							<ul>
+								<li><a href="service/restautant/intro.html">餐厅介绍</a></li>
+								<li><a href="service/restautant/service.html">主要服务</a></li>								
+							</ul>
+						</li>
+						<li><a href="hire.html">加入我们</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+					<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( "nav> ul" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+					<!-- //script for menu -->		
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- ===== 轮播 ===== -->
+	<div class="banner">
+		<div class="container">
+			<div class="bann-logo wow fadeInDownBig animated" data-wow-delay="0.0s" style="visibility: visible; -webkit-animation-delay: 0.0s;">
+				<img src="images/logo_banner.png" alt="真爱时刻THE PRECIOUS MOMENT" />
+			</div>
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+			    $(function () {
+			      $("#slider").responsiveSlides({
+			      	auto: true,
+			      	nav: true,
+			      	speed: 500,
+			        namespace: "callbacks",
+			        pager: false,
+			      });
+			    });
+			</script>
+	
+			<div class="slider wow bounceIn animated" data-wow-delay="1s" style="visibility: visible; -webkit-animation-delay: 1s;" >
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider">
+						<li>
+							<a href="#"><h1>公司宣传语公司宣传语公司宣传语</h1></a>
+							<a href="#"><p>详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细详细文字介绍最多两行</p></a>
+							<div class="bann-btn">
+								<a href="#">查看详情</a>
+							</div>	          
+						</li>
+						<li>	          
+							<a href="#"><h1>最新动态资讯文字标题</h1>
+							<a href="#"><p>详细文字介绍详细文字介绍详细文字介绍详细文字介绍文字介绍详细文字介绍</p></a>
+							<div class="bann-btn">
+								<a href="#">查看详情</a>
+							</div>		          
+						 </li>
+						 <li>	          
+							<a href="#"><h1>最新动态资讯文字标题最多十四字</h1></a>
+							<a href="#"><p>详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细文字介绍详细详细文字介绍最多两行</p></a>
+							<div class="bann-btn">
+								<a href="#">查看详情</a>
+							</div>	          
+						 </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== 主体 ===== -->	
+	<main role="main">
+		<section id="about">
+			<div class="container">
+				<div class="title">
+					<h1>关于<span lang="en">about</span></h1>
+				</div>
+				<div class="wow fadeInUpBig animated" style="visibility: visible;">
+					<article>
+						<p>珍爱时刻，The Precious Moment，自然艺术品牌，</p>
+						<p><span>1990年由高意静创立于台北，善于运用植物、花卉等丰富的自然元素进行设计，创造出极具美感的情境与空间。</span><span>珍爱时刻的风格，大气而高雅，深受豪门婚礼客户和顶级品牌客户的青睐，作品多次在美国获奖。在广受赞誉之后，珍爱时刻，将设计创意从活动空间拓展到了影响力更为持久和广泛的建筑空间，致力于用自然元素，创造美感而舒适的人文环境，唤起人类对自然的关怀，传递更多的爱，让世界变得更美好。</span></p>
+					</article>
+					<div class="more">
+						<a href="about/intro.html">
+							<p>了解更多</p>
+							<div class="oblique-line">
+							</div>
+							<p lang="en">more</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="works">
+			<div class="container">
+				<div class="title">
+					<h1>案例<span lang="en">works</span></h1>
+				</div>
+				<div class="wow fadeInUpBig animated" style="visibility: visible;">				
+					<div class="grids">
+						<div class="col-md-4 col-sm-6 grid">
+							<figure>
+								<img src="images/works1.jpg" alt="">
+								<figcaption>
+									<h3>婚礼艺术：烟花巴洛克</h3>
+									<span>受到新娘父亲魏先生捐资台北101大厦新年烟火秀的启发，珍爱时刻设计了主题为“烟花巴洛克”的绚烂婚礼。</span>
+									<div class="bann-btn">
+										<a href="service/wedding/wedding01.html">查看详情</a>
+									</div>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6 grid">
+							<figure>
+								<img src="images/works2.jpg" alt="">
+								<figcaption>
+									<h3>婚礼艺术：山盟海誓</h3>
+									<span>这场三亚海滨的婚礼，使用了十一万三千六百朵鲜花，气氛华丽、大气而优雅。</span>
+									<div class="bann-btn">
+										<a href="service/wedding/wedding02.html">查看详情</a>
+									</div>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6 grid">
+							<figure>
+								<img src="images/works3.jpg" alt="">
+								<figcaption>
+									<h3>公关活动：走进自然</h3>
+									<span>结合活动空间的特色，通过精心的设计，将自然的美感与气息和Zegna品牌完美结合。</span>
+									<div class="bann-btn">
+										<a href="service/event/launch01.html">查看详情</a>
+									</div>
+								</figcaption>
+							</figure>
+						</div>					
+						<div class="col-md-4 col-sm-6 grid">
+							<figure>
+								<img src="images/works4.jpg" alt="">
+								<figcaption>
+									<h3>公关活动：花·物</h3>
+									<span>大型艺术装置“花·物”：凸显出女性对世界越来越多的实践，以及面对物质和精神的崭新态度。</span>
+									<div class="bann-btn">
+										<a href="service/event/art01.html">查看详情</a>
+									</div>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6 grid">
+							<figure>
+								<img src="images/works5.jpg" alt="">
+								<figcaption>
+									<h3 class="long-title">绿化工程：东方园林总部大楼</h3>
+									<span>珍爱时刻帮助东方园林打造出最美最生态的办公室，彰显了东方园林作为行业领导者的形象和气质。</span>
+									<div class="bann-btn">
+										<a href="service/landscape/landscape02.html">查看详情</a>
+									</div>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6 grid">
+							<figure>
+								<img src="images/works6.jpg" alt="">
+								<figcaption>
+									<h3 class="long-title">绿化工程：Botanica植物园</h3>
+									<span>珍爱时刻所设计的Botanica植物园体验餐厅有数千棵植物，形成了最生态的室内环境。</span>
+									<div class="bann-btn">
+										<a href="service/landscape/landscape01.html">查看详情</a>
+									</div>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="clearfix"></div>
+			 		</div>
+			 
+						<div class="more">
+							<a href="service/service-list.html">
+								<p>了解更多</p>
+								<div class="oblique-line">
+								</div>
+								<p lang="en">more</p>
+							</a>
+						</div>
+				</div>
+			</div>
+		</section>
+		<section id="service">
+			<div class="container">
+				<div class="title">
+					<h1>服务<span lang="en">service</span></h1>
+				</div>
+			<div class="grids wow fadeInUpBig animated" style="visibility: visible;">
+				<div class="col-md-3 col-sm-6 grid">
+					<a href="service/wedding/wedding-list.html">
+						<p class="num">01</p>
+						<h2>婚礼艺术<span>Wedding Ceremony</span></h2>			
+						<p>除了创造浪漫而惊艳的场景，珍爱时刻始终努力赋予婚礼“爱与传承”的感动</p>
+					</a>		
+				</div>
+				<div class="col-md-3 col-sm-6 grid">
+					<a href="service/event/event-list.html">
+						<p class="num">02</p>
+						<h2>公关活动<span>Public Relations Event</span></h2>
+						<p>不断追求活动空间和流程的创新设计，让珍爱时刻赢得了国际性的品牌声誉</p>		
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 grid">
+					<a href="service/landscape/landscape-list.html">
+						<p class="num">03</p>
+						<h2>绿化工程<span>Landscape Construction</span></h2>
+						<p>提供个性化的全流程解决方案，为客户创造出独具自然美感的舒适建筑空间</p>	
+					</a>	
+				</div>
+				<div class="col-md-3 col-sm-6 grid">
+					<a href="service/retail/retail-list.html">
+						<p class="num">04</p>
+						<h2>商品零售<span>Retail Commodity</span></h2>
+						<p>珍爱时刻所推出的每一个产品，都努力融合自然的美感和人类的创意</p>
+					</a>
+				</div>	
+			</div>
+			</div>								
+		</section>
+		<section id="restaurant">
+			<div class="container">
+				<h1><span lang="en">Botanica</span>植物园</h1>
+				<p>宣传语宣传语宣传语宣传语宣传语宣传语宣传语宣传语宣传语</p>
+				<div class="bann-btn">
+					<a href="service/restautant/intro.html">查看详情</a>
+				</div>
+			</div>
+		</section>
+		<section id="news">
+			<div class="container">
+				<div class="title">
+					<h1>动态<span>news</span></h1>
+				</div>
+				<div class="grids">
+					<div class="col-md-3 col-sm-5 grid news-img wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<a href="news/news-001.html"> </a>
+					</div>
+					<div class="col-md-4 col-sm-7 grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<div class="news-info news-info-main">
+							<a href="news/news-001.html"><h4>新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题</h4></a>
+							<time datetime="">Mar 26</time>
+							<p>摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要</p>							
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-12 grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<div class="news-info news-info-aside">
+							<time datetime="">Mar<span>23</span></time>
+							<a href="news/news-001.html"><h4>新闻标题新闻标题新闻标题新闻</h4></a>
+						</div>
+						<div class="clearfix"></div>
+						<div class="news-info news-info-aside">
+							<time datetime="">Mar<span>23</span></time>
+							<a href="news/news-001.html"><h4>新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题</h4></a>
+						</div>
+						<div class="clearfix"></div>
+						<div class="news-info news-info-aside">
+							<time datetime="">Mar<span>23</span></time>
+							<a href="news/news-001.html"><h4>新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题</h4></a>
+						</div>
+						<div class="clearfix"></div>
+						<div class="news-info news-info-aside">
+							<time datetime="">Mar<span>23</span></time>
+							<a href="news/news-001.html"><h4>新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题</h4></a>
+						</div>								
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				
+				
+				<div class="more">
+					<a href="news/news-list.html">
+						<p>了解更多</p>
+						<div class="oblique-line">
+						</div>
+						<p lang="en">more</p>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<!-- ===== 页脚 ===== -->	
+	<footer>
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-4 col-sm-6">
+					<div class="footer-logo wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">				
+						<img src="images/logo-footer.png" />
+					</div>
+					<div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<ul>
+							<li><a class="icon1"> </a></li>
+							<li><a class="icon2"> </a></li>
+						</ul>
+					</div>
+					<div class="contact-info wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<ul>
+							<li><i class="icon3"> </i></li>
+							<li>+86 10-56181368 / +86 10-56181908</li>
+						</ul>
+						<ul>
+							<li><i class="icon4"> </i></li>
+							<li><a href="mailto:info@tpmevent.com">info@tpmevent.com</a></li>
+						</ul>
+						<ul>
+							<li><i class="icon5"> </i></li>
+							<li>北京 751 D·PARK A11楼, 100015</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="col-md-5 col-sm-6">
+					<div class="qr-codes wow fadeInUpBig animated" style="visibility: visible;">
+						<ul>
+							<li class="qr-code">
+									<h5>微信订阅号：tpm1990</h5>
+									<img src="images/qr-code1.jpg" />
+							</li>
+							<li class="qr-code">
+									<h5>微信服务号：珍爱时刻服务号</h5>
+									<img src="images/qr-code2.jpg" />
+								</figure>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12">
+					<div class="partners wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<h5>合作伙伴</h5>
+						<ul>
+							<li><img src="images/partners1.jpg" /></li>
+							<li><img src="images/partners2.jpg" /></li>
+						</ul>
+						<ul>
+							<li><img src="images/partners3.jpg" /></li>
+							<li><img src="images/partners4.jpg" /></li>
+						</ul>
+						<ul>
+							<li><img src="images/partners5.jpg" /></li>
+							<li><img src="images/partners6.jpg" /></li>
+						</ul>						
+					</div>
+				</div>						
+			</div>
+			<div class="clearfix"></div>
+			
+			<div class="footer-bottom wow fadeInUpBig animated" style="visibility: visible;">
+				<p lang="en"><small>&copy; 2016 THE PRECIOS MOMENT, All Rights Reserved</small></p>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body></html>
