@@ -733,12 +733,14 @@ footer{
 .main-body aside ul li{
 	font-size: 1.2em;
 	color: #cea36c;
-	padding: 1em 0;
 }
 .main-body aside ul li a{
 	text-decoration: none;
 	color: #cea36c;
+	display: block;
+	padding: 1em 0;
 }
+
 .main-body aside ul li.active a{
 	color: #4c2562;
 }
@@ -1126,19 +1128,22 @@ nav li li:hover >a{
 /*二级页*/
 .main-body aside{
 	margin-left: 0;
+	text-align: right;
 }
-.main-body aside > ul{
+.main-body aside ul{
 	display: inline-block;
 	width: 100%; 
 }
 .main-body aside ul li{
-	display: block;
-	float: right;
+	display: inline-block;
 	padding-left: 3em;
 	padding-bottom: 0.5em;
 }
+
+
 .main-body article{
 	clear: both;
+	margin-top: 3em;
 }
 .main-body article embed{
 	height: 430px;
